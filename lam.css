@@ -1,0 +1,18 @@
+* {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* Styling for swiper buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #528DFF; /* Set color of buttons */
+    background: rgba(0, 0, 0, 0.3); /* Optional: Add background color */
+}
+
+/* Styling for swiper pagination */
+.swiper-pagination-bullet {
+    background-color: #528DFF;
+}
