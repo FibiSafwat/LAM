@@ -1,0 +1,276 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LAM-Home page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="lam.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="bg-[#EAECF4]">
+            <div class="container mx-auto">
+                <div class="flex flex-cols justify-between items-center gap-4 py-4 px-10">
+                    <img src="img/Logo.png" alt="">
+                    <ul class="flex flex-cols justify-between items-center gap-4">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Services</a></li>
+                        <!-- Dropdown menu -->
+                        <li class="relative group"> <!-- Add group class for hover state -->
+                            <a href="" class="relative inline-block button flex gap-2 justify-center items-center">
+                                Our projects 
+                                <i class="border-r-[1px] border-b-[1px] p-[2px] inline-block border-black rotate-[45deg]"></i>
+                            </a> 
+                            <!-- Dropdown list -->
+                            <ul class="z-10 absolute top-[27px] hidden group-hover:block text-nowrap border rounded-md bg-white dropdown-content text-black py-[10px] px-[20px] leading-10  opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-[1s] ease-in invisible">
+                                <li><a class="hover:bg-[#425889] hover:text-white hover:rounded-md hover:py-[5px] px-[10px]" href="">Project 1</a></li>
+                                <li><a class="hover:bg-[#425889] hover:text-white hover:rounded-md hover:py-[5px] px-[10px]" href="">Project 2</a></li>
+                                <li><a class="hover:bg-[#425889] hover:text-white hover:rounded-md hover:py-[5px] px-[10px]" href="">Project 3 </a></li>
+                                <li><a class="hover:bg-[#425889] hover:text-white hover:rounded-md hover:py-[5px] px-[10px]" href="">Project 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <a class="text-white font-bold border rounded-md bg-[#425889] p-4" href="">Request a call</a>
+                </div>
+            </div>
+        </nav>
+        <!-- breadcramp -->
+        <section class="bg-[url('img/Hero.png')] relative bg-cover h-[200px] bg-no-repeat bg-top ">
+            <div class="absolute inset-0 bg-black opacity-50 z-0"></div>  
+            <div class="container mx-auto py-12 ">
+                <div class="relative z-10 flex flex-col gap-8">
+                    <h2 class="text-white font-bold text-3xl">
+                        About us
+                    </h2>
+                    <div class="text-white flex gap-2">
+                        <span>
+                            Home
+                        </span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5L16 12L9 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                        <span>
+                            About us
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About LAM -->
+        <section class="container mx-auto py-8">
+            <div class="flex flex-col gap-4">
+                <span class="text-[#528DFF] font-semibold">
+                    About LAM
+                </span> 
+                <h2 class="text-[#36466E] font-bold text-4xl">
+                    What you Need to Know
+                </h2>
+                <img class="w-full h-[450px] rounded-md" src="img/cars.png" alt="">
+                <p>
+                    We are based in Pembury, Kent but work throughout the UK. Liquid Applied Membranes (LAM) was founded in 2009 by Director Mark Richards. Mark has over 30 years’ experience in waterproofing and surfacing industries and has managed many prestigious commercial and domestic projects throughout the UK. Mark’s tenacious attitude can add value to any project along with his wealth of project management expertise whilst his eye for detail and efficiency ensure all services are carried out on time and on budget.
+                </p>
+                <p>
+                    Liquid Applied Membranes deliver proven solutions to fulfil a wide range of applications. Our systems deliver the highest levels of technical performance. We offer all of our customers both commercial and domestic the highest levels of support and service in satisfying their specific needs. We pride ourselves on our customer service which results in high customer satisfaction and repeat business
+                </p>
+                <p>
+                    Liquid Applied Membranes operates within the commercial, industrial and domestic sectors. We work with our clients in the most efficient and cost effective way throughout their projects. LAM can add value to any project by tailoring value engineering solutions to help the client save on cost whilst maximising performance. LAM is responsible for sales, estimating, design and installation.
+                </p>
+            </div>
+        </section>
+        <!-- Our team -->
+        <section class="container mx-auto py-8">
+            <div class="grid sm:grid-cols-1 md: grid-cols-3 lg:grid-cols-3 gap-10">
+                <div class="flex flex-col gap-2">
+                    <img class="h-[450px]  rounded-md" src="img/eng1.jpg" alt="">
+                    <span class="text-[#3C3F49] text-sm">Engineer</span>
+                    <span class="text-[#A6B5D3] font-semibold text-xl">Joseph J. Biden</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img class="h-[450px] rounded-md" src="img/eng2.jpg" alt="">
+                    <span class="text-[#3C3F49] text-sm">Engineer</span>
+                    <span class="text-[#A6B5D3] font-semibold text-xl">Joseph J. Biden</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img class="h-[450px] rounded-md" src="img/eng3.png" alt="">
+                    <span class="text-[#3C3F49] text-sm">Engineer</span>
+                    <span class="text-[#A6B5D3] font-semibold text-xl">Joseph J. Biden</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 pt-8">
+                <h3 class="text-3xl font-bold text-[#36466E]">
+                    Our Team
+                </h3>
+                <p>
+                    All of our operatives hold CSCS cards and receive extensive health and safety training.
+                    Our waterproofing and protection systems are only installed by our own fully trained and authorised contractors. We invest in directly employed teams of site operatives, site managers and project managers. We ensure all of our staff are trained to the highest possible standard by arranging regular on-site training with our long term partner material manufacturers. We believe in keeping our staff happy to ensure we maximise satisfaction for our customers. There is always an operations manager and site manager on hand to assist. All of the team pride themselves on reliability.
+                </p>
+                <p>
+                    LAM believe in complete client satisfaction and are committed to ensure we always maintain and develop our business relationships whilst maintaining high standards and customer service, regardless of the size of the project.
+                    If you would like any assistance with your projects we would welcome hearing from you and feel sure you will find our rates highly competitive.
+                    Our dedicated team can help you with all areas of your projects including:
+                </p>
+                <ul class="list-disc list-inside flex flex-col gap-1 py-1">
+                    <li>
+                        Site surveys
+                    </li>
+                    <li>
+                        Quotations
+                    </li>
+                    <li>
+                        Samples
+                    </li>
+                    <li>
+                        Technical advice
+                    </li>
+                    <li>
+                        On and off site testing
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+        <!-- Our values -->
+        <section class="container mx-auto py-8">
+            <div class="flex flex-col gap-6">
+                <img class="w-full h-[450px] rounded-md"  src="img/values.png" alt="">
+                <h3 class="text-3xl font-bold text-[#36466E]">
+                    Our Values
+                </h3>
+                <ul class="list-disc list-inside flex flex-col gap-1 py-1">
+                    <li>
+                        We are solely focused on the needs of our customers and our customer’s customers
+                    </li>
+                    <li>
+                        Safety is our priority
+                    </li>
+                    <li>
+                        We recognise our customer’s value requirements and address them from the outset
+                    </li>
+                    <li>
+                        We offer innovative solutions based on sound principles
+                    </li>
+                    <li>
+                        We are straightforward, open and honest.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    <!-- Partners -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="flex flex-col gap-4">
+            <span class="text-[#528DFF]">Happy Partners</span>
+                <h2 class="text-[#36466E] font-bold text-3xl">Partner Of Success</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-8">
+                    <div class="grid grid-cols-3 justify-between gap-4">
+                        <img src="img/Centaur.png" alt="">
+                        <img src="img/checkatrade.png" alt="">
+                        <img src="img/Res-tec.png" alt="">
+                        <img src="img/Res-tec.png" alt="">
+                        <img src="img/checkatrade.png" alt="">
+                        <img src="img/Centaur.png" alt="">
+                        <img src="img/Centaur.png" alt="">
+                        <img src="img/Res-tec.png" alt="">
+                        <img src="img/checkatrade.png" alt="">
+                    </div>
+                    <img src="img/Office.png" alt="">
+                </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-[#2C364E]">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start justify-between gap-4">
+                <div class="grid gap-4">
+                    <img src="img/Group 5.png" alt="">
+                    <p class="text-white">We are LAM, a dynamic and Responsible Linings and Coatings Company that are dedicated to delivering your projects on time, on site and on budget.</p>
+                    <div class="flex gap-2 items-center">
+                        <a class="bg-[#A6B5D33D] h-10 w-10 flex items-center justify-center rounded-md" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                <path d="M20.5557 10C20.5557 4.48 16.0757 0 10.5557 0C5.03566 0 0.555664 4.48 0.555664 10C0.555664 14.84 3.99566 18.87 8.55566 19.8V13H6.55566V10H8.55566V7.5C8.55566 5.57 10.1257 4 12.0557 4H14.5557V7H12.5557C12.0057 7 11.5557 7.45 11.5557 8V10H14.5557V13H11.5557V19.95C16.6057 19.45 20.5557 15.19 20.5557 10Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a class="bg-[#A6B5D33D] h-10 w-10  rounded-md flex items-center justify-center" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M17.8587 2.25H7.25266C6.07325 2.25 4.94213 2.71852 4.10816 3.5525C3.27419 4.38647 2.80566 5.51758 2.80566 6.697V17.303C2.80566 18.4824 3.27419 19.6135 4.10816 20.4475C4.94213 21.2815 6.07325 21.75 7.25266 21.75H17.8587C19.0381 21.75 20.1692 21.2815 21.0032 20.4475C21.8371 19.6135 22.3057 18.4824 22.3057 17.303V6.697C22.3057 5.51758 21.8371 4.38647 21.0032 3.5525C20.1692 2.71852 19.0381 2.25 17.8587 2.25ZM9.39866 17.992C9.4018 18.0464 9.39377 18.1009 9.37508 18.1521C9.35639 18.2034 9.32742 18.2502 9.28996 18.2898C9.2525 18.3294 9.20734 18.361 9.15724 18.3825C9.10715 18.404 9.05319 18.4151 8.99866 18.415H7.21866C7.11132 18.4124 7.00929 18.3678 6.93449 18.2907C6.8597 18.2137 6.81811 18.1104 6.81866 18.003V10.6C6.81719 10.5466 6.82645 10.4934 6.8459 10.4435C6.86534 10.3937 6.89457 10.3483 6.93186 10.31C6.96915 10.2717 7.01374 10.2413 7.06301 10.2205C7.11227 10.1997 7.1652 10.189 7.21866 10.189H8.99866C9.05213 10.189 9.10506 10.1997 9.15432 10.2205C9.20358 10.2413 9.24818 10.2717 9.28547 10.31C9.32276 10.3483 9.35199 10.3937 9.37143 10.4435C9.39087 10.4934 9.40014 10.5466 9.39866 10.6V17.992ZM8.07566 8.632C7.88295 8.63056 7.69241 8.59117 7.51491 8.51608C7.33742 8.441 7.17646 8.33169 7.04121 8.1944C6.90596 8.05711 6.79908 7.89452 6.72666 7.71593C6.65425 7.53733 6.61772 7.34621 6.61916 7.1535C6.62061 6.96079 6.66 6.77024 6.73508 6.59275C6.81016 6.41526 6.91947 6.25429 7.05676 6.11904C7.19405 5.98379 7.35664 5.87691 7.53524 5.8045C7.71384 5.73208 7.90495 5.69556 8.09766 5.697C8.48018 5.70944 8.84269 5.87087 9.10785 6.14686C9.37301 6.42284 9.51981 6.79152 9.51694 7.17423C9.51407 7.55694 9.36175 7.92337 9.09248 8.19535C8.82322 8.46732 8.45833 8.6233 8.07566 8.63M18.8927 17.98C18.8922 18.081 18.8525 18.178 18.782 18.2503C18.7115 18.3227 18.6157 18.3649 18.5147 18.368H16.6357C16.5345 18.3649 16.4385 18.3226 16.368 18.25C16.2974 18.1774 16.2579 18.0802 16.2577 17.979V14.555C16.2577 14.044 16.4137 12.332 14.9017 12.332C13.7227 12.332 13.4897 13.532 13.4447 14.066V18.057C13.4447 18.1584 13.4053 18.2558 13.3347 18.3286C13.2641 18.4014 13.168 18.4439 13.0667 18.447H11.2437C11.1404 18.4467 11.0415 18.4055 10.9685 18.3324C10.8956 18.2593 10.8547 18.1603 10.8547 18.057V10.564C10.8578 10.4627 10.9002 10.3665 10.9731 10.296C11.0459 10.2254 11.1433 10.186 11.2447 10.186H13.0667C13.1681 10.186 13.2655 10.2254 13.3383 10.296C13.4111 10.3665 13.4535 10.4627 13.4567 10.564V11.209C13.7227 10.8196 14.09 10.5103 14.5189 10.3143C14.9479 10.1183 15.4222 10.0432 15.8907 10.097C18.9257 10.097 18.9147 12.932 18.9147 14.544L18.8927 17.98Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a class="bg-[#A6B5D33D] h-10 w-10 rounded-md  flex items-center justify-center" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <mask id="mask0_65_843" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+                                <path d="M0.555664 0H24.5557V24H0.555664V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_65_843)">
+                                <path d="M19.4557 1.12451H23.1362L15.0962 10.3371L24.5557 22.8754H17.15L11.3454 15.2725L4.71109 22.8754H1.02709L9.62595 13.0182L0.555664 1.12623H8.14995L13.3888 8.07423L19.4557 1.12451ZM18.1614 20.6674H20.2014L7.03566 3.21765H4.84824L18.1614 20.6674Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a class="bg-[#A6B5D33D] h-10 w-10 rounded-md  flex items-center justify-center" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M9.59566 21.54C10.5557 21.83 11.5257 22 12.5557 22C15.2078 22 17.7514 20.9464 19.6267 19.0711C21.5021 17.1957 22.5557 14.6522 22.5557 12C22.5557 10.6868 22.297 9.38642 21.7945 8.17317C21.2919 6.95991 20.5553 5.85752 19.6267 4.92893C18.6981 4.00035 17.5958 3.26375 16.3825 2.7612C15.1692 2.25866 13.8689 2 12.5557 2C11.2424 2 9.94209 2.25866 8.72883 2.7612C7.51557 3.26375 6.41318 4.00035 5.4846 4.92893C3.60923 6.8043 2.55566 9.34784 2.55566 12C2.55566 16.25 5.22566 19.9 8.99566 21.34C8.90566 20.56 8.81566 19.27 8.99566 18.38L10.1457 13.44C10.1457 13.44 9.85566 12.86 9.85566 11.94C9.85566 10.56 10.7157 9.53 11.6957 9.53C12.5557 9.53 12.9557 10.16 12.9557 10.97C12.9557 11.83 12.3857 13.06 12.0957 14.24C11.9257 15.22 12.6157 16.08 13.6157 16.08C15.3957 16.08 16.7757 14.18 16.7757 11.5C16.7757 9.1 15.0557 7.46 12.5857 7.46C9.76566 7.46 8.10566 9.56 8.10566 11.77C8.10566 12.63 8.38566 13.5 8.84566 14.07C8.93566 14.13 8.93566 14.21 8.90566 14.36L8.61566 15.45C8.61566 15.62 8.50566 15.68 8.33566 15.56C7.05566 15 6.31566 13.18 6.31566 11.71C6.31566 8.55 8.55566 5.68 12.8757 5.68C16.3157 5.68 18.9957 8.15 18.9957 11.43C18.9957 14.87 16.8657 17.63 13.8157 17.63C12.8457 17.63 11.8957 17.11 11.5557 16.5L10.8857 18.87C10.6557 19.73 10.0257 20.88 9.59566 21.57V21.54Z" fill="white"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="grid gap-6">
+                    <h4 class="text-[#A6B5D3] font-bold">Our Services</h4>
+                    <div class="grid grid-cols-3 gap-2">
+                        <img src="img/piscine stairs.png" alt="">
+                        <img src="img/pool.png" alt="">
+                        <img src="img/garden2.png" alt="">
+                        <img src="img/city.png" alt="">
+                        <img src="img/floor.png" alt="">
+                        <img src="img/piscine stairs.png" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-6">
+                    <h4 class="text-[#A6B5D3] font-bold">Latest news</h4>
+                    <ul class="grid gap-2 justify-start items-start text-white">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li>
+                            <a href="">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid gap-6">
+                    <h4 class="text-[#A6B5D3] font-bold">Contact us</h4>
+                    <div class="flex gap-2 items-center">
+                        <svg class="bg-[#A6B5D33D] rounded-md h-12 w-12" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.13838 6.32216C10.1667 4.30549 13.5067 4.66383 15.205 6.93383L17.3084 9.74049C18.6917 11.5872 18.5684 14.1672 16.9267 15.7988L16.53 16.1955C16.4851 16.362 16.4805 16.5369 16.5167 16.7055C16.6217 17.3855 17.19 18.8255 19.57 21.1922C21.95 23.5588 23.4 24.1255 24.09 24.2322C24.2639 24.2671 24.4435 24.262 24.615 24.2172L25.295 23.5405C26.755 22.0905 28.995 21.8188 30.8017 22.8005L33.985 24.5338C36.7134 26.0138 37.4017 29.7205 35.1684 31.9422L32.8 34.2955C32.0534 35.0372 31.05 35.6555 29.8267 35.7705C26.81 36.0522 19.7817 35.6922 12.3934 28.3472C5.49838 21.4905 4.17505 15.5105 4.00671 12.5638C3.92338 11.0738 4.62671 9.81383 5.52338 8.92383L8.13838 6.32216ZM13.205 8.43216C12.36 7.30383 10.7867 7.21383 9.90004 8.09549L7.28338 10.6955C6.73338 11.2422 6.47005 11.8455 6.50338 12.4222C6.63671 14.7638 7.70338 20.1588 14.1567 26.5755C20.9267 33.3055 27.1784 33.5072 29.595 33.2805C30.0884 33.2355 30.5784 32.9788 31.0367 32.5238L33.4034 30.1688C34.3667 29.2122 34.155 27.4688 32.7917 26.7288L29.6084 24.9972C28.7284 24.5205 27.6984 24.6772 27.0584 25.3138L26.3 26.0688L25.4167 25.1822C26.3 26.0688 26.2984 26.0705 26.2967 26.0705L26.295 26.0738L26.29 26.0788L26.2784 26.0888L26.2534 26.1122C26.1831 26.1775 26.1072 26.2366 26.0267 26.2888C25.8934 26.3772 25.7167 26.4755 25.495 26.5572C25.045 26.7255 24.4484 26.8155 23.7117 26.7022C22.2667 26.4805 20.3517 25.4955 17.8067 22.9655C15.2634 20.4355 14.27 18.5322 14.0467 17.0888C13.9317 16.3522 14.0234 15.7555 14.1934 15.3055C14.2869 15.0523 14.4209 14.8159 14.59 14.6055L14.6434 14.5472L14.6667 14.5222L14.6767 14.5122L14.6817 14.5072L14.685 14.5038L15.165 14.0272C15.8784 13.3155 15.9784 12.1372 15.3067 11.2388L13.205 8.43216Z" fill="white"/>
+                        </svg>
+                        <div class="text-white flex flex-col gap-1">
+                            <span>Phone</span>
+                            <a class="font-bold" href="">01892 825768</a>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <svg class="bg-[#A6B5D33D] rounded-md h-12 w-12" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M26 14V21.5C26 22.6935 26.4741 23.8381 27.318 24.682C28.162 25.5259 29.3065 26 30.5 26C31.6935 26 32.8381 25.5259 33.682 24.682C34.5259 23.8381 35 22.6935 35 21.5V20C35 16.621 33.8591 13.3409 31.7621 10.6913C29.6652 8.04162 26.735 6.17762 23.4463 5.40128C20.1577 4.62493 16.7032 4.98172 13.6427 6.41384C10.5821 7.84596 8.09476 10.2695 6.58361 13.2918C5.07246 16.3141 4.62603 19.7581 5.31667 23.0658C6.00731 26.3735 7.79454 29.3512 10.3888 31.5163C12.9831 33.6814 16.2324 34.9072 19.6103 34.9949C22.9882 35.0827 26.2968 34.0274 29 32M26 20C26 20.7879 25.8448 21.5682 25.5433 22.2961C25.2418 23.0241 24.7998 23.6855 24.2427 24.2427C23.6855 24.7998 23.0241 25.2418 22.2961 25.5433C21.5682 25.8448 20.7879 26 20 26C19.2121 26 18.4319 25.8448 17.7039 25.5433C16.976 25.2418 16.3145 24.7998 15.7574 24.2427C15.2002 23.6855 14.7583 23.0241 14.4567 22.2961C14.1552 21.5682 14 20.7879 14 20C14 18.4087 14.6322 16.8826 15.7574 15.7574C16.8826 14.6322 18.4087 14 20 14C21.5913 14 23.1174 14.6322 24.2427 15.7574C25.3679 16.8826 26 18.4087 26 20Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        <div class="text-white flex flex-col gap-1">
+                            <span>Email</span>
+                            <a class="font-bold" href="">info@liquidapplied.co.u</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    </body>
+    </html>
